@@ -1,1 +1,21 @@
-<p>dice-simulator works!</p>
+<div class="container">
+  <app-heading-with-back [title]="'Dice Simulator'"></app-heading-with-back>
+
+  <div class="d-flex flex-column">
+    Add dice to dice tower:
+    <button class="btn btn-primary mt-4" (click)="addDiceToDiceTower('green')">Green Dice</button>
+    <ng-container *ngIf="diceTower.length > 0">
+      <p class='mb-0 mt-4 h6'>Dice in dice tower:</p>
+
+      <ul>
+        <li
+          [@simpleFadeAnimation]="'in'"
+          *ngFor="let dice of diceTower">
+          {{dice}}
+        </li>
+      </ul>
+
+    </ng-container>
+  </div>
+
+</div>
