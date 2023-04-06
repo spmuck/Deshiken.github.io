@@ -9,6 +9,7 @@ import { TileRandomizerComponent } from './tile-randomizer/tile-randomizer.compo
 import { UnitReferenceCardsComponent } from './unit-reference-cards/unit-reference-cards.component';
 import { UprisingFactionsComponent } from './uprising-factions/uprising-factions.component';
 import { UprisingHomeComponent } from './uprising-home/uprising-home.component';
+import {DiceSimulatorComponent} from "./dice-simulator/dice-simulator.component";
 
 const routes: Routes = [
   { path: '', component: UprisingHomeComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'map-builder', component: MapBuilderComponent},
   { path: 'map-builder-options', component: MapBuilderOptionsComponent},
   { path: 'factions', component: UprisingFactionsComponent},
+  { path: 'dice-simulator', component: DiceSimulatorComponent}
 ];
 
 @NgModule({
