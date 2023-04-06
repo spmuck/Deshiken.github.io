@@ -1,5 +1,5 @@
 <div class="container">
-  
+
   <app-heading-with-back [title]="'Uprising Tools'"></app-heading-with-back>
 
   <div class="d-flex align-items-center">
@@ -55,6 +55,20 @@
   <div class="collapse" id="unitReferenceCards">
     <div class="card card-body">
       Access to current and past versions of the unit reference card.
+    </div>
+  </div>
+
+  <div class="d-flex align-items-center">
+    <button class="btn btn-primary btn-lg my-3" (click)="router.navigate(['uprising/dice-simulator'])">
+      Dice Simulator
+    </button>
+    <i class="bi m-3 bi-question-circle-fill" style="font-size: 2.4rem;"
+       data-bs-toggle="collapse" data-bs-target="#diceSimulatorCollapse" aria-expanded="false" aria-controls="diceSimulatorCollapse">
+    </i>
+  </div>
+  <div class="collapse" id="diceSimulatorCollapse">
+    <div class="card card-body">
+      Are the dice bullshit or did you just learn a painful lesson?
     </div>
   </div>
 

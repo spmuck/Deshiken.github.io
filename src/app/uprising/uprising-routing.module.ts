@@ -5,6 +5,7 @@ import { MercenaryPickerComponent } from './mercenary-picker/mercinary-picker.co
 import { TileRandomizerComponent } from './tile-randomizer/tile-randomizer.component';
 import { UnitReferenceCardsComponent } from './unit-reference-cards/unit-reference-cards.component';
 import { UprisingHomeComponent } from './uprising-home/uprising-home.component';
+import {DiceSimulatorComponent} from "./dice-simulator/dice-simulator.component";
 
 const routes: Routes = [
   { path: '', component: UprisingHomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'maps', component: MapsAndPlayInstructionsComponent},
   { path: 'tile-randomizer', component: TileRandomizerComponent},
   { path: 'unit-reference-cards', component: UnitReferenceCardsComponent},
+  { path: 'dice-simulator', component: DiceSimulatorComponent}
 ];
 
 @NgModule({
